@@ -1,17 +1,17 @@
 {
   "name": "genner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just a Generator",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon index.js",
-    "run:publish":"npm version patch && npm publish",
+    "dev": "nodemon index.js",
+    "run:publish": "npm version patch && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bin":{
-    "gnn":"./index.js"
+  "bin": {
+    "gnn": "./index.js"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
