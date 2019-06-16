@@ -22,7 +22,7 @@ const commandCondition = async args => {
     case args["--test"]:
       console.log("YEAH IS TRUE");
       break;
-    case args["--help"]:
+    case args["--hello"]:
       console.log('Hi ! ! !')
       break;
     default:
