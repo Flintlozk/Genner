@@ -1,0 +1,3 @@
+exports.Generator = () => {
+    return 'GENERATED'
+}
