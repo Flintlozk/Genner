@@ -1,3 +1,3 @@
-exports.Generator = () => {
-    return 'GENERATED'
+exports.mainGenerator = () => {
+    console.log('RUN COMMAND "gnn" ')
 }
