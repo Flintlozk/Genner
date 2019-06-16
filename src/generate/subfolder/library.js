@@ -1,9 +1,9 @@
-const mkdir = require("../../../library/");
+const {mkDIR}  = require("../../../library/");
 const path = require("path");
 
 const generateLibrary = () =>
   new Promise(async (resolve, reject) => {
-    resolve(await mkdir(path.join(process.env.gnnSubFolder, "lib")));
+    resolve(await mkDIR(path.join(process.env.gnnSubFolder, "lib")));
   });
 
 module.exports = {

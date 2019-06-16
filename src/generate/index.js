@@ -1,11 +1,11 @@
-const mkdir = require("../../library/");
+const { mkDIR } = require("../../library/");
 const path = require("path");
 const { generateAllAtOnce } = require("./subfolder");
 
 const generateProjectFromCurrentPath = () =>
-  new Promise(async (resolve) => {
+  new Promise(async resolve => {
     //   generateAllAtOnce()
-    await mkdir(process.env.gnnProjectName);
+    await mkDIR(process.env.gnnProjectName);
     process.env.gnnSubFolder = path.join(
       process.cwd(),
       process.env.gnnProjectName

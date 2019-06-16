@@ -1,9 +1,9 @@
-const mkdir = require("../../../library/");
+const {mkDIR}  = require("../../../library/");
 const path = require("path");
 
 const generateHelper = () =>
   new Promise(async (resolve, reject) => {
-    resolve(await mkdir(path.join(process.env.gnnSubFolder, "helpers")));
+    resolve(await mkDIR(path.join(process.env.gnnSubFolder, "helpers")));
   });
 
 module.exports = {
