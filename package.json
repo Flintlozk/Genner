@@ -11,9 +11,12 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "gnn": "node index.js"
+    "gnn": "./index.js"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "arg": "^4.1.0"
   }
 }
