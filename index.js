@@ -16,10 +16,12 @@ const commands = {
   "-g": "--generate"
 };
 
+const help = `  --help , -h : Show all commands  \n  --generate , -g : run this command with project name as an argument \n  --hello : just say hi`;
+
 const commandCondition = async args => {
   switch (true) {
     case args["--help"]: {
-      console.log("SHOW HELP LIST");
+      console.log(help);
       break;
     }
     case args["--test"]:
@@ -33,8 +35,7 @@ const commandCondition = async args => {
       generate();
       break;
     default:
-      console.log("args->>", args);
-      await read();
+      console.log(help);
       break;
   }
 };
