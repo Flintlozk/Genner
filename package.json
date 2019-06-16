@@ -1,6 +1,6 @@
 {
   "name": "genner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just a Generator",
   "main": "index.js",
   "scripts": {
